@@ -1,0 +1,23 @@
+{
+  "name": "maximilianmikus.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximilianmikus/vuepress-page-mgm.git"
+  },
+  "author": "Maximilian Götz-Mikus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maximilianmikus/vuepress-page-mgm/issues"
+  },
+  "homepage": "https://github.com/maximilianmikus/vuepress-page-mgm#readme",
+  "dependencies": {
+    "vuepress": "^0.10.0"
+  }
+}
