@@ -7,13 +7,19 @@ set -e
 npm run build
 
 # navigate into the build output directory
-cd .vuepress/dist
+cd .vuepress/app
+
+
+# delete everything exept .git
+find . -maxdepth 1 -mindepth 1 -not -name .git -exec rm -rf {} \;
+
+cp ../dist/* . -r
 
 # if you are deploying to a custom domain
 echo 'kask.at' > CNAME
 
 git add -A
-git commit -m 'deploy'
+git commit -m 'Automatic deployment.'
 
 # if you are deploying to https://<USERNAME>.github.io
 git push
